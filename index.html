@@ -170,6 +170,28 @@
                 font-size: 16px;
                 color: #777;
             }
+
+            .info-page {
+                max-width: 900px;
+                line-height: 1.5;
+            }
+
+            .info-page h2 {
+                margin-top: 0;
+                color: #26495f;
+            }
+
+            .info-page-section {
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background: #fff;
+                padding: 16px;
+                margin-bottom: 12px;
+            }
+
+            .info-page-section h3 {
+                margin-top: 0;
+            }
         </style>
     </head>
 
@@ -1197,11 +1219,44 @@
             let currentTab = "content";
             let currentComponent = "";
 
+            const infoPages = {
+                careers: {
+                    title: "Careers Site Components",
+                    body: `
+                        <div class="info-page-section">
+                            <h3>Choose a component from the left menu</h3>
+                            <p>Use the expanded submenu to select component-specific instructions for the Careers site.</p>
+                        </div>
+                        <div class="info-page-section">
+                            <h3>Job Categories Page</h3>
+                            <p>Includes instructions for components such as Why Unum, Roles, Testimonials, News Widget, Video, Award Callout, and Job Postings.</p>
+                            <p>Job categories include: <strong>Audit</strong>, <strong>Claims</strong>, <strong>Customer Service</strong>, <strong>Finance</strong>, <strong>IT</strong>, <strong>Medical/Vocational</strong>, and <strong>Sales</strong>.</p>
+                        </div>
+                        <div class="info-page-section">
+                            <h3>Locations Page</h3>
+                            <p>Includes instructions for components such as Intro, Local Awards, Local Resources, Local Community, Local News, Campus Video and Local Job Postings.</p>
+                            <p>Locations include: <strong>Atlanta</strong>, <strong>Baton Rouge</strong>, <strong>Chattanooga</strong>, <strong>Columbia</strong> and <strong>Portland</strong>.</p>
+                        </div>
+                    `
+                }
+            };
+
             /* Highlight helper */
             function highlight(text, search) {
                 if (!search) return text;
                 const regex = new RegExp(`(${search})`, "gi");
                 return text.replace(regex, "<mark>$1</mark>");
+            }
+
+            function renderInfoPage(tab) {
+                const infoPage = infoPages[tab];
+
+                contentEl.innerHTML = `
+                    <div class="info-page">
+                        <h2>${infoPage.title}</h2>
+                        ${infoPage.body}
+                    </div>
+                `;
             }
 
             function render() {
@@ -1218,6 +1273,9 @@
                     );
                 } else if (currentComponent) {
                     items = submenuData.filter(item => item.parentTab === currentTab && item.component === currentComponent);
+                } else if (infoPages[currentTab]) {
+                    renderInfoPage(currentTab);
+                    return;
                 } else {
                     items = data.filter(item => item.tab === currentTab);
                 }

@@ -97,6 +97,11 @@
                 border-left: 2px solid #d6dde5;
             }
 
+            .submenu-heading{
+                display: block;
+                margin: 7px 0;
+            }
+
             .subtab {
                 padding: 7px 10px;
                 cursor: pointer;
@@ -186,6 +191,7 @@
                     <span class="submenu-arrow">▶</span>
                 </div>
                 <div class="submenu">
+                    <span class="submenu-heading"><strong>Job Categories Page</strong></span>
                     <div class="subtab" data-tab="careers" data-component="why-unum">Why Unum Component</div>
                     <div class="subtab" data-tab="careers" data-component="roles">Roles Component</div>
                     <div class="subtab" data-tab="careers" data-component="testimonials">Testimonials Component</div>
@@ -193,6 +199,14 @@
                     <div class="subtab" data-tab="careers" data-component="video">Video Component</div>
                     <div class="subtab" data-tab="careers" data-component="award">Award Callout Component</div>
                     <div class="subtab" data-tab="careers" data-component="job-postings">Job Postings Component</div>
+                    <span class="submenu-heading"><strong>Locations Page</strong></span>
+                    <div class="subtab" data-tab="careers" data-component="intro">Intro Component</div>
+                    <div class="subtab" data-tab="careers" data-component="local-award">Award Callout Component</div>
+                    <div class="subtab" data-tab="careers" data-component="local-resources">Local Resources Component</div>
+                    <div class="subtab" data-tab="careers" data-component="local-community">Local Community Component</div>
+                    <div class="subtab" data-tab="careers" data-component="local-news">News Widget Component</div>
+                    <div class="subtab" data-tab="careers" data-component="campus-video">Campus Video Component</div>
+                    <div class="subtab" data-tab="careers" data-component="local-job-postings">Job Postings Component</div>
                 </div>
             </div>
             <hr style="width: 100%;" />
@@ -813,7 +827,6 @@
                             <li>Click <strong>OK</strong></li>
                             <li>Save and publish</li>
                         </ol>
-                        <p><strong>Note:</strong> The widget ID is provided by the EmbedSocial platform. Contact your administrator if you need assistance.</p>
                     `
                 },
                 {
@@ -925,7 +938,257 @@
                         </ol>
                         <p><strong>Note:</strong> The job postings component is connected to the external job board and will automatically update with new postings. The filter option allows you to display only certain types of jobs based on keywords. Use "," for the AND operator and "|" for the OR operator</p>
                     `
+                },
+                {
+                    parentTab: "careers",
+                    component: "intro",
+                    title: "Edit Background Color",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>Intro Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "intro",
+                    title: "Update Text",
+                    body: `
+                        <ol>
+                            <li>Click directly on the text field you want to edit in the <strong>Intro</strong> component</li>
+                            <li>Make your updates using the inline editor</li>
+                            <li>Click <strong>Save</strong> then <strong>Publish</strong></li>
+                        </ol>
+                        <p><strong>Note:</strong> You can edit the pictures and the text in the Intro component sub-sections as well. This is done as you would any other image or text field.</p>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-award",
+                    title: "Customize Award Callout Component parameters",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>Award Callout Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Choose your background color from the <strong>Component Background Color</strong> dropdown</li>
+                            <li>Choose your <strong>Media Position</strong> (left or right) from the dropdown</li>
+                            <li>Choose the type of <strong>Type of Award Component</strong> (Awards Slider or Single Award) from the dropdown</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                        <p><strong>Note:</strong> The Awards Slider component allows for multiple awards to be displayed in a carousel format, while the Single Award component displays one award at a time. The Media Position dropdown only affects the Single Award component type.</p>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-award",
+                    title: "Add a single award callout",
+                    body: `
+                        <ol>
+                            <li>Select <strong>Single Award</strong> from the "Type of Award Component" dropdown in the component parameters</li>
+                            <li>Click the image and follow standard procedures for adding an image</li>
+                            <li>Click the text fields and enter your content</li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-award",
+                    title: "Add an awards slider",
+                    body: `
+                        <ol>
+                            <li>Select <strong>Awards Slider</strong> from the "Type of Award Component" dropdown in the component parameters</li>
+                            <li>Click the blue dashed placeholder box and click <strong>Add here</strong></li>
+                            <li>Select Awards Slider then click <strong>Select</strong></li>
+                            <li>Either select an Awards Slider in the "_Content" folder or create a new one by clicking <strong>Create New Content</strong>, entering a name then click <strong>OK</strong></li>
+                            <li>Click <strong>Save</strong></li>
+                            <li>Click the placeholder image and follow standard procedures for adding an image</li>
+                            <li>Click the text fields and enter the name of the award and a link to the award's website</li>
+                            <li>To add a new award, click anywhere outside of an award in the slider, then click the <strong>Insert a new item (+)</strong> button, name your award and click <strong>OK</strong></li>
+                            <li>Repeat previous steps to edit the image, name and link for each award you want to add to the slider</li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-award",
+                    title: "Edit awards slider parameters",
+                    body: `
+                        <ol>
+                            <li>Click anywhere in the awards slider to bring up the dialogue, click <strong>More</strong> then click <strong>Edit component properties</strong></li>
+                            <li><strong>Slides To Show</strong> refers to how many slides are visible at once in the carousel - Enter a number between 1 and 5</li>
+                            <li><strong>Slides To Scroll</strong> refers to how many slides will move when the user clicks the arrow buttons - Enter a number between 1 and 5</li>
+                            <li><strong>Infinite</strong> refers to whether the carousel will loop back to the beginning when the user reaches the end - Check or uncheck the box</li> 
+                            <li><strong>Dots</strong> refers to whether the carousel will display navigation dots below the slides - Check or uncheck the box</li>
+                            <li><strong>Autoplay</strong> refers to whether the carousel will automatically advance through the slides - Check or uncheck the box</li>
+                            <li><strong>Slider Width</strong> refers to the width of the carousel - Select from the dropdown</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-resources",
+                    title: "Edit background color",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>Local Resources Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-resources",
+                    title: "Edit Local Resources icons and links",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>icon image</strong> and change, edit or remove as you would any other image</li>
+                            <li>Edit link text by clicking on the text and using the inline editor to make changes</li>
+                            <li>You can modify the <strong>URL</strong> by either click on the image or on the text, then clicking the "Edit Link" or "Remove Link" icon</li>
+                            <li>From there, you select the link type, add URL and ensure the "Target Window" is set</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-community",
+                    title: "Edit background color",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>Local Community Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-community",
+                    title: "Edit images and text",
+                    body: `
+                        <ol>
+                            <li>Click on the image and make your desired changes as you normally would</li>
+                            <li>Click text and use the inline editor to make changes</li>                            
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-news",
+                    title: "Edit background color",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>News Widget Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-news",
+                    title: "Modify which widget is displayed",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>News Widget Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Enter ID in the text box labeled <strong>EmbedSocial Widget ID</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                        <p><strong>Note:</strong> The widget ID is provided by the EmbedSocial platform. Contact your administrator if you need assistance.</p>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-news",
+                    title: "Remove social widget",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>News Widget Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Delete the ID in the text box labeled <strong>EmbedSocial Widget ID</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "campus-video",
+                    title: "Edit background color",
+                    body: `
+                        <ol>
+                            <li>Click on the <strong>Campus Video Component</strong> box in Experience Editor</li>
+                            <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
+                            <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "campus-video",
+                    title: "Add a video",
+                    body: `
+                        <ol>
+                            <li>Click the blue dashed box in Experience Editor under the Video Component</li>
+                            <li>Click <strong>Add here</strong></li>
+                            <li>Click <strong>Careers Video</strong> then click <strong>Select</strong></li>
+                            <li>Choose a video from the _Content folder or click <strong>Create New Content</strong> to add a new video to the Media Library</li>
+                            <li>Configure the video settings as needed</li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "campus-video",
+                    title: "Remove video",
+                    body: `
+                        <ol>
+                            <li>Click on the video</li>
+                            <li>Click the <strong>Remove (X)</strong> button</li>
+                            <li>Save and publish</li>
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "careers",
+                    component: "local-job-postings",
+                    title: "Edit job postings component",
+                    body: `
+                        <ol>
+                            <li>Click <strong>Job Postings Component</strong> to bring up the dialogue, click <strong>More</strong> then click <strong>Edit component properties</strong></li>
+                            <li><strong>Filter</strong> refers to the keyword used to filter job postings - Enter a keyword or leave blank for all postings</li>
+                            <li><strong>Limit</strong> refers to the maximum number of job postings to display - Enter a number between 1-10 (3 recommended) or leave blank for default of 10</li>
+                            <li><strong>See All Careers Link</strong> refers to the URL for the "See All" button - Select a page from the dropdown</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> The job postings component is connected to the external job board and will automatically update with new postings. The filter option allows you to display only certain types of jobs based on keywords. Use "," for the AND operator and "|" for the OR operator</p>
+                    `
                 }
+
             ];
 
             const contentEl = document.getElementById("content");

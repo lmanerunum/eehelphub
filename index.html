@@ -16,12 +16,21 @@
 
             /* Sidebar */
             .sidebar {
-                width: 280px;
+                width: 320px;
+                flex: 0 0 320px;
                 background: #f5f7fa;
                 padding: 16px;
                 border-right: 1px solid #ddd;
                 display: flex;
                 flex-direction: column;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+            .sidebar svg {
+                width: 100%;
+                height: auto;
+                flex-shrink: 0;
             }
 
             .search-wrapper {
@@ -63,6 +72,7 @@
                 cursor: pointer;
                 border-radius: 6px;
                 margin-bottom: 6px;
+                overflow-wrap: anywhere;
             }
 
             .tab.active {
@@ -109,6 +119,7 @@
                 color: #333;
                 font-size: 13px;
                 margin-bottom: 3px;
+                overflow-wrap: anywhere;
             }
 
             .subtab:hover {

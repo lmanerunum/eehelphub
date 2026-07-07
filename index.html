@@ -156,6 +156,10 @@
                 align-items: center;
             }
 
+            .task-header span{
+                line-height: 1 !important;
+            }
+
             .task-body {
                 display: none;
                 padding: 14px;
@@ -208,6 +212,29 @@
                 margin-bottom: 16px;
                 color: #26495f;
                 text-align: center;
+            }
+
+            .content-controls {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 12px;
+                font-size: 13px;
+            }
+
+            .content-controls a {
+                color: #26495f;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .content-controls a:hover {
+                color: #1a3347;
+            }
+
+            .content-controls span {
+                color: #999;
             }
 
             .hamburger{
@@ -292,7 +319,18 @@
             <h3>Editor Functions</h3>
             <div class="tab active" data-tab="content">✏️ Content Editing</div>
             <div class="tab" data-tab="media">🖼 Media & Images</div>
-            <div class="tab" data-tab="components">🧩 General Components</div>
+            <div class="menu-group" data-menu-group="general_components">
+                <div class="tab has-submenu" data-tab="general_components">
+                    <span>🧩 General Components</span>
+                    <span class="submenu-arrow">▶</span>
+                </div>
+                <div class="submenu">
+                    <div class="subtab" data-tab="general_components" data-component="new-content">New Content Component</div>
+                    <div class="subtab" data-tab="general_components" data-component="image-banner">Enhanced Image Banner</div>
+                    <div class="subtab" data-tab="general_components" data-component="icon-list">Icon List</div>
+                    <div class="subtab" data-tab="general_components" data-component="accordion">Accordion</div>
+                </div>
+            </div>
             <div class="menu-group" data-menu-group="careers">
                 <div class="tab has-submenu" data-tab="careers">
                     <span>💼 Careers Site Components</span>
@@ -1295,6 +1333,199 @@
                         </ol>
                         <p><strong>Note:</strong> The job postings component is connected to the external job board and will automatically update with new postings. The filter option allows you to display only certain types of jobs based on keywords. Use "," for the AND operator and "|" for the OR operator</p>
                     `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "new-content",
+                    title: "Add a New Content component",
+                    body: `
+                        <ol>
+                            <li>From the Experience Editor, click <strong>Home</strong> in the command ribbon and under <strong>New</strong> click <strong>Component</strong></li>
+                            <li>Click <strong>Add here</strong> where you would like to place the new component</li>
+                            <li>Select a frame from the available options 1-4</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Click in the new frame area and click <strong>Add here</strong></li>
+                            <li>Choose from the available Content component options - Default, Image Bottom, Image Left, Image Right</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Either Select Existing Content or Create New Content from the next dialogue</li>
+                            <li>If creating new content, input a name and then click <strong>OK</strong></li> 
+                            <li>Save and publish</li>                          
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "new-content",
+                    title: "Add/Edit an Image",
+                    body: `
+                        <ol>
+                            <li>Click on the placeholder image</li> 
+                            <li>Click either the <strong>Add Image</strong>, <strong>Edit Image</strong> or <strong>Remove Image</strong> button</li>
+                            <li>Add, edit or remove an image as you normally would</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "new-content",
+                    title: "Add/Edit Text",
+                    body: `
+                        <ol>
+                            <li>Click on the placeholder text</li> 
+                            <li>Add, edit or remove text as you normally would</li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> The last text field is a rich text field and can include various formatting options such as bold, italic, lists, and links.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "new-content",
+                    title: "Add/Edit/Remove call to action button",
+                    body: `
+                        <ol>
+                            <li>Click on the button near the bottom of the New Content component just above the dashed line box</li>
+                            <li>Click either the <strong>Edit Button</strong> or <strong>Remove Button</strong> button</li>
+                            <li>Select a link type from the left menu, then select a page or enter a URL or email address</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> In the edit link dialogue, you have the option to input a style class for the button. Please input "button" if you would like your button to follow brand style guidelines for the site.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "new-content",
+                    title: "Add component to the New Content placeholder",
+                    body: `
+                        <ol>
+                            <li>Click into the dashed line box at the bottom of the New Content component</li> 
+                            <li>This will bring up a dialogue where you can select a component to add</li>
+                            <li>Choose from the available components, then click <strong>Select</strong></li>
+                            <li>Configure the component fields in the dialog that appears</li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "image-banner",
+                    title: "Add new Enhanced Content Image Banner",
+                    body: `
+                        <ol>
+                            <li>From the Experience Editor, click <strong>Home</strong> in the command ribbon and under <strong>New</strong> click <strong>Component</strong></li>
+                            <li>Click <strong>Add here</strong> where you would like to place the new component</li>
+                            <li>Choose <strong>Enhanced Content Image Banner</strong> and click <strong>Select</strong></li>
+                            <li>Choose your data source - either select an existing item or create a new one</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "image-banner",
+                    title: "Add/Edit an Image",
+                    body: `
+                        <ol>
+                            <li>Click on the placeholder image</li> 
+                            <li>Click either the <strong>Add Image</strong>, <strong>Edit Image</strong> or <strong>Remove Image</strong> button</li>
+                            <li>Add, edit or remove an image as you normally would</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "image-banner",
+                    title: "Add/Edit Text",
+                    body: `
+                        <ol>
+                            <li>Click on the placeholder text</li> 
+                            <li>Add, edit or remove text as you normally would</li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> The last text field is a rich text field and can include various formatting options such as bold, italic, lists, and links.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "image-banner",
+                    title: "Add/Edit/Remove call to action button",
+                    body: `
+                        <ol>
+                            <li>Click on the button near the bottom of the Enhanced Content Image Banner component just above the dashed line box</li>
+                            <li>Click either the <strong>Edit Button</strong> or <strong>Remove Button</strong> button</li>
+                            <li>Select a link type from the left menu, then select a page or enter a URL or email address</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> In the edit link dialogue, you have the option to input a style class for the button. Please input "button" if you would like your button to follow brand style guidelines for the site.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "icon-list",
+                    title: "Add new Icon List component",
+                    body: `
+                        <ol>
+                            <li>From the Experience Editor, click <strong>Home</strong> in the command ribbon and under <strong>New</strong> click <strong>Component</strong></li>
+                            <li>Click <strong>Add here</strong> in the frame where you would like to place the new component</li>
+                            <li>Choose <strong>Icon List</strong> and click <strong>Select</strong></li>
+                            <li>Choose your data source - either select an existing item or create a new one</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> In order to add a new icon list component, you must first insert a 1, 2, 3 or 4 column frame. Then you can place the icon list component within that frame.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "accordion",
+                    title: "Add new Accordion component",
+                    body: `
+                        <ol>
+                            <li>From the Experience Editor, click <strong>Home</strong> in the command ribbon and under <strong>New</strong> click <strong>Component</strong></li>
+                            <li>Click <strong>Add here</strong> in the frame where you would like to place the new component</li>
+                            <li>Choose <strong>Accordion</strong> and click <strong>Select</strong></li>
+                            <li>Choose your data source - either select an existing item or create a new one</li>
+                            <li>Click <strong>Select</strong></li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> In order to add a new accordion component, you must first insert a 1, 2, 3 or 4 column frame. Then you can place the accordion component within that frame.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "accordion",
+                    title: "Add/Edit Text",
+                    body: `
+                        <ol>
+                            <li>Click on the placeholder text</li> 
+                            <li>Add, edit or remove text as you normally would</li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> The expanded text field is a rich text field and can include various formatting options such as bold, italic, lists, and links.</p>
+                    `
+                },
+                {
+                    parentTab: "general_components",
+                    component: "accordion",
+                    title: "Add new Accordion item to the list",
+                    body: `
+                        <ol>
+                            <li>From the Content Editor, find the page you are working on, expand and click on the <strong>_Content</strong> folder</li>
+                            <li>Find the Accordion component that you would like to add a new item to and click on it</li>
+                            <li>You can either right-click on the accordion component, click <strong>Insert</strong> and then <strong>Consolidated Content</strong>, or use the top command ribbon to add a new <strong>Consolidated Content</strong> item</li>
+                            <li>Name the item and click <strong>OK</strong></li>
+                            <li>Fill in the <strong>Heading Level 1</strong> and <strong>Content</strong> fields for the new accordion item</li>
+                            <li>Save and publish</li>                          
+                        </ol>
+                        <p><strong>Note:</strong> The only part of the Consolidated Content item that is used for an accordion item is the <strong>Heading Level 1</strong> and the <strong>Content</strong> fields. All other fields are ignored.</p>
+                    `
                 }
 
             ];
@@ -1330,6 +1561,98 @@
                             <p>Locations include: <strong>Atlanta</strong>, <strong>Baton Rouge</strong>, <strong>Chattanooga</strong>, <strong>Columbia</strong> and <strong>Portland</strong>.</p>
                         </div>
                     `
+                },
+                general_components: {
+                    title: "General Components",
+                    body: `
+                        <div class="task">
+                        <div class="task-header" role="button" aria-expanded="false" tabindex="0">
+                            <span>
+                                Add a new component
+                                
+                            </span>
+                            <span>▼</span>
+                        </div>
+                        <div class="task-body">
+                        <ol>
+                            <li>Click HOME in the Experience Editor ribbon</li>
+                            <li>Under the New section, click <strong>Component</strong></li>
+                            <li>Click <strong>Add Here</strong> where you would like to place the new component</li>
+                            <li>Select a component from the list</li>
+                            <li>Configure the component fields in the dialog that appears</li>
+                            <li>Click <strong>OK</strong> and save changes</li>
+                        </ol>
+                    </div>
+                    </div><div class="task">
+                        <div class="task-header" role="button" aria-expanded="false" tabindex="0">
+                            <span>
+                                Move or reorder a component
+                                
+                            </span>
+                            <span>▼</span>
+                        </div>
+                        <div class="task-body">
+                        <ol>
+                            <li>Click the component to reveal the component toolbar</li>
+                            <li>Click the <strong>Move</strong> button to open the move dialog</li>
+                            <li>Click <strong>Move here</strong> on the desired placeholder or position</li>
+                            <li>Alternatively, use the drag handle (if available) to drag the component to a new position within the same placeholder</li>
+                            <li>Save and publish</li>
+                        </ol>
+                    </div>
+                    </div><div class="task">
+                        <div class="task-header" role="button" aria-expanded="false" tabindex="0">
+                            <span>
+                                Remove a component
+                                
+                            </span>
+                            <span>▼</span>
+                        </div>
+                        <div class="task-body">
+                        <ol>
+                            <li>Click on the component to reveal the component toolbar</li>
+                            <li>Click on the red <strong>(X)</strong> icon</li>
+                            <li>Confirm the removal when prompted</li>
+                            <li>Save and publish</li>
+                        </ol>
+                        <p><strong>Note:</strong> Removing a component from a page does not delete its datasource item. The content item in the tree is unaffected.</p>
+                    </div>
+                    </div><div class="task">
+                        <div class="task-header" role="button" aria-expanded="false" tabindex="0">
+                            <span>
+                                Edit a component's datasource
+                                
+                            </span>
+                            <span>▼</span>
+                        </div>
+                        <div class="task-body">
+                        <ol>
+                            <li>Click on the component to reveal the component toolbar</li>
+                            <li>Click <strong>More</strong> then <strong>Edit Component Properties</strong></li>
+                            <li>In the dialog, update the <strong>Data Source</strong> field to point to a different content item, or click <strong>Edit the related item</strong> to open the current datasource for editing</li>
+                            <li>Save the datasource item changes</li>
+                            <li>Publish the page</li>
+                        </ol>
+                    </div>
+                    </div><div class="task">
+                        <div class="task-header" role="button" aria-expanded="false" tabindex="0">
+                            <span>
+                                Modify component options
+                                
+                            </span>
+                            <span>▼</span>
+                        </div>
+                        <div class="task-body">
+                        <ol>
+                            <li>Click on the component to reveal the component toolbar</li>
+                            <li>Click <strong>More</strong> then <strong>Edit Component Properties</strong></li>
+                            <li>Update any available options (e.g., layout, style, visibility)</li>
+                            <li>Click <strong>OK</strong></li>
+                            <li>Save and publish</li>
+                        </ol>
+                    </div>
+                    </div></div>
+                    `
                 }
             };
 
@@ -1338,6 +1661,36 @@
                 if (!search) return text;
                 const regex = new RegExp(`(${search})`, "gi");
                 return text.replace(regex, "<mark>$1</mark>");
+            }
+
+            function bindExpandCollapseAll() {
+                const tasks = contentEl.querySelectorAll(".task");
+                if (tasks.length === 0) return;
+
+                const controls = document.createElement("div");
+                controls.className = "content-controls";
+                controls.innerHTML = `<a class="expand-all-btn">Expand All</a><span>|</span><a class="collapse-all-btn">Collapse All</a>`;
+
+                controls.querySelector(".expand-all-btn").addEventListener("click", () => {
+                    contentEl.querySelectorAll(".task").forEach(task => {
+                        task.classList.add("open");
+                        task.querySelector(".task-header").setAttribute("aria-expanded", "true");
+                    });
+                });
+
+                controls.querySelector(".collapse-all-btn").addEventListener("click", () => {
+                    contentEl.querySelectorAll(".task").forEach(task => {
+                        task.classList.remove("open");
+                        task.querySelector(".task-header").setAttribute("aria-expanded", "false");
+                    });
+                });
+
+                const title = contentEl.querySelector(".content-title");
+                if (title) {
+                    title.after(controls);
+                } else {
+                    contentEl.prepend(controls);
+                }
             }
 
             function renderInfoPage(tab) {
@@ -1349,6 +1702,19 @@
                         ${infoPage.body}
                     </div>
                 `;
+
+                contentEl.querySelectorAll(".task-header").forEach(header => {
+                    header.addEventListener("click", () => {
+                        const task = header.closest(".task");
+                        const isOpen = task.classList.toggle("open");
+                        header.setAttribute("aria-expanded", isOpen);
+                    });
+                    header.addEventListener("keypress", e => {
+                        if (e.key === "Enter" || e.key === " ") header.click();
+                    });
+                });
+
+                bindExpandCollapseAll();
             }
 
             function render() {
@@ -1419,6 +1785,7 @@
 
                     contentEl.appendChild(el);
                 });
+                bindExpandCollapseAll();
             }
 
             /* Tab click */

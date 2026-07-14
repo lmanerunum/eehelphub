@@ -7,6 +7,7 @@
 Thumbs.db
 .DS_Store
 
+## Hiding admin from production
 admin.html
 admin.js
 admin.css

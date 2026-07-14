@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Editor Help Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navigation-background"></div>
+    <div class="hamburger" id="hamburger">
+        <span id="hamburgerIcon">☰</span>
+        <span id="closeIcon" style="display:none;">✕</span>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="search-wrapper">
+            <input type="text" id="search" placeholder="Search tasks..." autocomplete="off">
+            <button class="search-clear" id="search-clear">&times;</button>
+        </div>
+
+        <div id="editor-functions"></div>
+        <div id="manager-functions"></div>
+    </div>
+
+    <div class="content" id="content"></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 320px;
+    flex: 0 0 320px;
+    background: #f5f7fa;
+    padding: 16px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar svg {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.search-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+input {
+    padding: 10px;
+    padding-right: 32px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-clear {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: #999;
+    line-height: 1;
+    padding: 0;
+    display: none;
+}
+
+.search-clear:hover {
+    color: #333;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    overflow-wrap: anywhere;
+}
+
+.tab.active {
+    background: #26495f;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-group.open .submenu {
+    display: block;
+}
+
+.menu-group.open .submenu-arrow {
+    transform: rotate(90deg);
+}
+
+.tab.has-submenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submenu-arrow {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+.submenu {
+    display: none;
+    margin: -2px 0 8px 14px;
+    padding-left: 10px;
+    border-left: 2px solid #d6dde5;
+}
+
+.submenu-heading{
+    display: block;
+    margin: 7px 0;
+}
+
+.subtab {
+    padding: 7px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 3px;
+    overflow-wrap: anywhere;
+}
+
+.subtab:hover {
+    background: #e8edf2;
+}
+
+.subtab.active {
+    background: #d9e6ef;
+    color: #26495f;
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.task {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.task-header {
+    padding: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-header span{
+    line-height: 1 !important;
+}
+
+.task-body {
+    display: none;
+    padding: 14px;
+    background: white;
+}
+
+.task.open .task-body {
+    display: block;
+}
+
+.category-label {
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+}
+
+mark {
+    background: #ffe58a;
+    padding: 0;
+}
+
+.no-results {
+    font-size: 16px;
+    color: #777;
+}
+
+.info-page {
+    line-height: 1.5;
+}
+
+.info-page h2 {
+    margin-top: 0;
+    color: #26495f;
+}
+
+.info-page-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.info-page-section h3 {
+    margin-top: 0;
+}
+
+.content-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #26495f;
+    text-align: center;
+}
+
+.content-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.content-controls a {
+    color: #26495f;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content-controls a:hover {
+    color: #1a3347;
+}
+
+.content-controls span {
+    color: #999;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .sidebar {
+        position: absolute;
+        z-index: 999;
+        width: calc(100% - 32px);
+        left: -100%;
+        height: calc(100vh - 132px);
+        transition: .5s left;
+        top: 100px;
+    }
+
+    .navigation-background {
+        position: fixed;
+        background: #f5f7fa;
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 25vw;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        color: black;
+        font-size: 2rem;
+        padding: 5px;
+        background-color: #f5f7fa;
+        z-index: 9999;
+    }
+
+    .open{
+        left: 0;
+        transition: .5s left;
+    }
+
+    #sitecoreLogo{
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        width: 80vw;
+    }
+
+    #titleHeadline{
+        position: fixed;
+        width: 100%;
+        top: 15vw;
+        left: 0;
+    }
+
+    .content{
+        padding-top: calc(25vw + 12px);
+    }
+
+    #closeIcon{
+        font-size: 3rem;
+        line-height: 1;
+    }
+}

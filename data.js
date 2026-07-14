@@ -2,16 +2,8 @@
  * data.js
  * -----------------------------------------------------------------------
  * Single source of truth for the Help Hub's navigation and content.
- * - menuStructure: drives the left sidebar (top-level tabs, menu groups with
- *   submenus, section headings, and submenu headings).
- * - data: task cards shown for top-level tabs (or search results).
- * - submenuData: task cards shown for a specific menu-group + submenu item.
- * - infoPages: custom info page markup shown when a menu-group parent tab
- *   is clicked directly (before a submenu item is chosen).
- *
- * This file is loaded by both index.html (the live site) and admin.html
- * (the admin portal). The admin portal lets you edit this structure and
- * export a new version of this file to replace this one in the project.
+ * Generated/exported by admin.html. Replace the project's data.js with
+ * this file to publish your changes to the live site.
  * -----------------------------------------------------------------------
  */
 
@@ -34,10 +26,31 @@ const menuStructure = [
         tab: "general_components",
         label: "🧩 General Components",
         submenu: [
-            { type: "item", component: "new-content", label: "New Content Component" },
-            { type: "item", component: "image-banner", label: "Enhanced Image Banner" },
-            { type: "item", component: "icon-list", label: "Icon List" },
-            { type: "item", component: "accordion", label: "Accordion" }
+            {
+                type: "item",
+                component: "new-content",
+                label: "New Content Component"
+            },
+            {
+                type: "item",
+                component: "image-banner",
+                label: "Enhanced Image Banner"
+            },
+            {
+                type: "item",
+                component: "icon-list",
+                label: "Icon List"
+            },
+            {
+                type: "item",
+                component: "accordion",
+                label: "Accordion"
+            },
+            {
+                type: "item",
+                component: "test",
+                label: "Test"
+            }
         ]
     },
     {
@@ -46,22 +59,84 @@ const menuStructure = [
         tab: "careers",
         label: "💼 Careers Site Components",
         submenu: [
-            { type: "heading", label: "Job Categories Page" },
-            { type: "item", component: "why-unum", label: "Why Unum Component" },
-            { type: "item", component: "roles", label: "Roles Component" },
-            { type: "item", component: "testimonials", label: "Testimonials Component" },
-            { type: "item", component: "news", label: "News Widget Component" },
-            { type: "item", component: "video", label: "Video Component" },
-            { type: "item", component: "award", label: "Award Callout Component" },
-            { type: "item", component: "job-postings", label: "Job Postings Component" },
-            { type: "heading", label: "Locations Page" },
-            { type: "item", component: "intro", label: "Intro Component" },
-            { type: "item", component: "local-award", label: "Award Callout Component" },
-            { type: "item", component: "local-resources", label: "Local Resources Component" },
-            { type: "item", component: "local-community", label: "Local Community Component" },
-            { type: "item", component: "local-news", label: "News Widget Component" },
-            { type: "item", component: "campus-video", label: "Campus Video Component" },
-            { type: "item", component: "local-job-postings", label: "Job Postings Component" }
+            {
+                type: "heading",
+                label: "Job Categories Page"
+            },
+            {
+                type: "item",
+                component: "why-unum",
+                label: "Why Unum Component"
+            },
+            {
+                type: "item",
+                component: "roles",
+                label: "Roles Component"
+            },
+            {
+                type: "item",
+                component: "testimonials",
+                label: "Testimonials Component"
+            },
+            {
+                type: "item",
+                component: "news",
+                label: "News Widget Component"
+            },
+            {
+                type: "item",
+                component: "video",
+                label: "Video Component"
+            },
+            {
+                type: "item",
+                component: "award",
+                label: "Award Callout Component"
+            },
+            {
+                type: "item",
+                component: "job-postings",
+                label: "Job Postings Component"
+            },
+            {
+                type: "heading",
+                label: "Locations Page"
+            },
+            {
+                type: "item",
+                component: "intro",
+                label: "Intro Component"
+            },
+            {
+                type: "item",
+                component: "local-award",
+                label: "Award Callout Component"
+            },
+            {
+                type: "item",
+                component: "local-resources",
+                label: "Local Resources Component"
+            },
+            {
+                type: "item",
+                component: "local-community",
+                label: "Local Community Component"
+            },
+            {
+                type: "item",
+                component: "local-news",
+                label: "News Widget Component"
+            },
+            {
+                type: "item",
+                component: "campus-video",
+                label: "Campus Video Component"
+            },
+            {
+                type: "item",
+                component: "local-job-postings",
+                label: "Job Postings Component"
+            }
         ]
     },
     {
@@ -79,8 +154,6 @@ const menuStructure = [
 ];
 
 const data = [
-
-    /* ── Content Editing ── */
     {
         tab: "content",
         title: "Edit Page in Experience Editor",
@@ -208,8 +281,6 @@ const data = [
             <p><strong>Warning:</strong> Deletion is permanent unless a backup or recycle bin is configured. Confirm with your team before deleting.</p>
         `
     },
-
-    /* ── Media & Images ── */
     {
         tab: "media",
         title: "Update an image",
@@ -280,8 +351,6 @@ const data = [
             </ol>
         `
     },
-
-    /* ── Components ── */
     {
         tab: "components",
         title: "Add a new component",
@@ -348,8 +417,6 @@ const data = [
             </ol>
         `
     },
-
-    /* ── Careers Site Tasks ── */
     {
         tab: "careers",
         title: "Careers site editing overview",
@@ -389,8 +456,6 @@ const data = [
             </ol>
         `
     },
-
-    /* ── Publishing ── */
     {
         tab: "publish",
         title: "Publish an item",
@@ -426,8 +491,6 @@ const data = [
             </ol>
         `
     },
-
-    /* ── Packaging ── */
     {
         tab: "packaging",
         title: "Create a new package",
@@ -1356,7 +1419,6 @@ const submenuData = [
             <p><strong>Note:</strong> The only part of the Consolidated Content item that is used for an accordion item is the <strong>Heading Level 1</strong> and the <strong>Content</strong> fields. All other fields are ignored.</p>
         `
     }
-
 ];
 
 const infoPages = {

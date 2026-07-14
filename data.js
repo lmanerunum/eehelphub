@@ -45,11 +45,6 @@ const menuStructure = [
                 type: "item",
                 component: "accordion",
                 label: "Accordion"
-            },
-            {
-                type: "item",
-                component: "test",
-                label: "Test"
             }
         ]
     },
@@ -187,7 +182,7 @@ const data = [
                 <li>Highlight the text you want to format</li>
                 <li>Use the toolbar that appears: <strong>B</strong> (bold), <em>I</em> (italic), U (underline), or the list icons for bullet/numbered lists</li>
                 <li>For additional options (headings, tables, special characters), click the expand icon on the right of the toolbar to open the full rich text editor</li>
-                <li>Save and publish when done</li>
+                <li>Save when done</li>
             </ol>
         `
     },
@@ -224,7 +219,7 @@ const data = [
                 <li>For an <strong>external link</strong>, click the globe icon in the toolbar, paste the URL, and select a target window</li>
                 <li>For an <strong>internal link</strong>, click the link icon and select the target item from the content tree</li>
                 <li>Click <strong>Insert</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -237,7 +232,7 @@ const data = [
                 <li>Click the link icon in the toolbar</li>
                 <li>Update the URL or reselect the target item from the content tree</li>
                 <li>Click <strong>Insert</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -249,7 +244,7 @@ const data = [
                 <li>Click on the linked text to position your cursor within it</li>
                 <li>Click the <strong>Remove Link</strong> icon (broken chain) in the toolbar</li>
                 <li>The text will remain but the hyperlink will be removed</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -290,7 +285,7 @@ const data = [
                 <li>Select <strong>Change Media</strong> from the component toolbar</li>
                 <li>Upload or choose a replacement image from the Media Library</li>
                 <li>Update the alt text for accessibility</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -317,7 +312,7 @@ const data = [
                 <li>Click the image in Experience Editor to select it</li>
                 <li>In the component toolbar that appears, click <strong>Clear</strong> or the remove (X) button</li>
                 <li>If the image is inside a rich text field, click the image and press <strong>Delete</strong> on your keyboard</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> This removes the image from the page only. The file remains in the Media Library.</p>
         `
@@ -347,7 +342,7 @@ const data = [
                 <li>Update the <strong>Alt Text</strong> field for accessibility compliance</li>
                 <li>Adjust <strong>Width</strong> or <strong>Height</strong> if needed (maintain aspect ratio to avoid distortion)</li>
                 <li>Click <strong>Accept</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -374,7 +369,7 @@ const data = [
                 <li>Click the <strong>Move</strong> button to open the move dialog</li>
                 <li>Click <strong>Move here</strong> on the desired placeholder or position</li>
                 <li>Alternatively, use the drag handle (if available) to drag the component to a new position within the same placeholder</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -386,7 +381,7 @@ const data = [
                 <li>Click on the component to reveal the component toolbar</li>
                 <li>Click on the red <strong>(X)</strong> icon</li>
                 <li>Confirm the removal when prompted</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> Removing a component from a page does not delete its datasource item. The content item in the tree is unaffected.</p>
         `
@@ -413,7 +408,7 @@ const data = [
                 <li>Click <strong>More</strong> then <strong>Edit Component Properties</strong></li>
                 <li>Update any available options (e.g., layout, style, visibility)</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -558,7 +553,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -570,7 +565,7 @@ const submenuData = [
             <ol>
                 <li>Click directly on the text field you want to edit in the <strong>Why Unum</strong> component</li>
                 <li>Make your updates using the inline editor</li>
-                <li>Click <strong>Save</strong> then <strong>Publish</strong></li>
+                <li>Click <strong>Save</strong></li>
             </ol>
         `
     },
@@ -584,7 +579,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -598,7 +593,7 @@ const submenuData = [
                 <li>Click the plus icon on the left side of the dialogue</li>
                 <li>Select <strong>Card</strong>, type in a name for the role then click <strong>OK</strong></li>
                 <li>Modify the headline and description text as needed</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -610,7 +605,7 @@ const submenuData = [
             <ol>
                 <li>Click on the card you wish to edit</li>
                 <li>Use the inline editor to make your changes</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -624,7 +619,7 @@ const submenuData = [
                 <li>Click the <strong>Sort the content</strong> button</li>
                 <li>Drag and drop the cards into the desired order</li>
                 <li>Click <strong>OK</strong> to save the new order</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -638,7 +633,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -652,7 +647,7 @@ const submenuData = [
                 <li>Click the plus icon on the left side of the dialogue box</li>
                 <li>Make sure <strong>Testimonial Slide</strong> is selected</li>
                 <li>Type in a name for the testimonial slide and click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -665,7 +660,7 @@ const submenuData = [
                 <li>Use the slider arrows to navigate to the testimonial you want to edit</li>
                 <li>Click on the text you want to change</li>
                 <li>Make your changes in the text editor that appears</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -678,7 +673,7 @@ const submenuData = [
                 <li>Use the slider arrows to navigate to the testimonial you want to edit</li>
                 <li>Click on the picture you want to change</li>
                 <li>Use the buttons to change, edit or remove the picture</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -692,7 +687,7 @@ const submenuData = [
                 <li>Click the <strong>Sort the content</strong> button</li>
                 <li>Drag and drop the testimonials into the desired order</li>
                 <li>Click <strong>OK</strong> to save the new order</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -705,7 +700,7 @@ const submenuData = [
                 <li>Click on <strong>Edit Testimonial</strong> to open the dialogue</li>
                 <li>Click the <strong>Delete (X)</strong> button</li>
                 <li>Click <strong>OK</strong> to confirm the deletion</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -719,7 +714,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -733,7 +728,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Enter ID in the text box labeled <strong>EmbedSocial Widget ID</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> The widget ID is provided by the EmbedSocial platform. Contact your administrator if you need assistance.</p>
         `
@@ -748,7 +743,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Delete the ID in the text box labeled <strong>EmbedSocial Widget ID</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -763,7 +758,7 @@ const submenuData = [
                 <li>Click <strong>Careers Video</strong> then click <strong>Select</strong></li>
                 <li>Choose a video from the _Content folder or click <strong>Create New Content</strong> to add a new video to the Media Library</li>
                 <li>Configure the video settings as needed</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -775,7 +770,7 @@ const submenuData = [
             <ol>
                 <li>Click on the video</li>
                 <li>Click the <strong>Remove (X)</strong> button</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -791,7 +786,7 @@ const submenuData = [
                 <li>Choose your <strong>Media Position</strong> (left or right) from the dropdown</li>
                 <li>Choose the type of <strong>Type of Award Component</strong> (Awards Slider or Single Award) from the dropdown</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> The Awards Slider component allows for multiple awards to be displayed in a carousel format, while the Single Award component displays one award at a time. The Media Position dropdown only affects the Single Award component type.</p>
         `
@@ -805,7 +800,7 @@ const submenuData = [
                 <li>Select <strong>Single Award</strong> from the "Type of Award Component" dropdown in the component parameters</li>
                 <li>Click the image and follow standard procedures for adding an image</li>
                 <li>Click the text fields and enter your content</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -824,7 +819,7 @@ const submenuData = [
                 <li>Click the text fields and enter the name of the award and a link to the award's website</li>
                 <li>To add a new award, click anywhere outside of an award in the slider, then click the <strong>Insert a new item (+)</strong> button, name your award and click <strong>OK</strong></li>
                 <li>Repeat previous steps to edit the image, name and link for each award you want to add to the slider</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -842,7 +837,7 @@ const submenuData = [
                 <li><strong>Autoplay</strong> refers to whether the carousel will automatically advance through the slides - Check or uncheck the box</li>
                 <li><strong>Slider Width</strong> refers to the width of the carousel - Select from the dropdown</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -856,7 +851,7 @@ const submenuData = [
                 <li>Click the <strong>Insert a new item (+)</strong> button</li>
                 <li>Ensure Award Slide is selected, enter a name for the Award Slide item, and click <strong>OK</strong></li>
                 <li>Fill in the Name of the Award, Award Logo, and Link to Award fields in the <strong>Experience Editor</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -870,7 +865,7 @@ const submenuData = [
                 <li>Expand the awards slider you are editing</li>
                 <li>Right click on the award you want to remove and select <strong>Delete</strong></li>
                 <li>Confirm the deletion</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -885,7 +880,7 @@ const submenuData = [
                 <li><strong>Limit</strong> refers to the maximum number of job postings to display - Enter a number between 1-10 (3 recommended) or leave blank for default of 10</li>
                 <li><strong>See All Careers Link</strong> refers to the URL for the "See All" button - Select a page from the dropdown</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> The job postings component is connected to the external job board and will automatically update with new postings. The filter option allows you to display only certain types of jobs based on keywords. Use "," for the AND operator and "|" for the OR operator</p>
         `
@@ -900,7 +895,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -929,7 +924,7 @@ const submenuData = [
                 <li>Choose your <strong>Media Position</strong> (left or right) from the dropdown</li>
                 <li>Choose the type of <strong>Type of Award Component</strong> (Awards Slider or Single Award) from the dropdown</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> The Awards Slider component allows for multiple awards to be displayed in a carousel format, while the Single Award component displays one award at a time. The Media Position dropdown only affects the Single Award component type.</p>
         `
@@ -943,7 +938,7 @@ const submenuData = [
                 <li>Select <strong>Single Award</strong> from the "Type of Award Component" dropdown in the component parameters</li>
                 <li>Click the image and follow standard procedures for adding an image</li>
                 <li>Click the text fields and enter your content</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -962,7 +957,7 @@ const submenuData = [
                 <li>Click the text fields and enter the name of the award and a link to the award's website</li>
                 <li>To add a new award, click anywhere outside of an award in the slider, then click the <strong>Insert a new item (+)</strong> button, name your award and click <strong>OK</strong></li>
                 <li>Repeat previous steps to edit the image, name and link for each award you want to add to the slider</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -980,7 +975,7 @@ const submenuData = [
                 <li><strong>Autoplay</strong> refers to whether the carousel will automatically advance through the slides - Check or uncheck the box</li>
                 <li><strong>Slider Width</strong> refers to the width of the carousel - Select from the dropdown</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -994,7 +989,7 @@ const submenuData = [
                 <li>Click the <strong>Insert a new item (+)</strong> button</li>
                 <li>Ensure Award Slide is selected, enter a name for the Award Slide item, and click <strong>OK</strong></li>
                 <li>Fill in the Name of the Award, Award Logo, and Link to Award fields in the <strong>Experience Editor</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1008,7 +1003,7 @@ const submenuData = [
                 <li>Expand the awards slider you are editing</li>
                 <li>Right click on the award you want to remove and select <strong>Delete</strong></li>
                 <li>Confirm the deletion</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1022,7 +1017,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1037,7 +1032,7 @@ const submenuData = [
                 <li>You can modify the <strong>URL</strong> by either click on the image or on the text, then clicking the "Edit Link" or "Remove Link" icon</li>
                 <li>From there, you select the link type, add URL and ensure the "Target Window" is set</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1051,7 +1046,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1063,7 +1058,7 @@ const submenuData = [
             <ol>
                 <li>Click on the image and make your desired changes as you normally would</li>
                 <li>Click text and use the inline editor to make changes</li>                            
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1077,7 +1072,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1091,7 +1086,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Enter ID in the text box labeled <strong>EmbedSocial Widget ID</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> The widget ID is provided by the EmbedSocial platform. Contact your administrator if you need assistance.</p>
         `
@@ -1106,7 +1101,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Delete the ID in the text box labeled <strong>EmbedSocial Widget ID</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1120,7 +1115,7 @@ const submenuData = [
                 <li>Click <strong>More</strong> then click <strong>Edit Component Properties</strong></li>
                 <li>Select a color from the dropdown under <strong>Component Background Color</strong></li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1135,7 +1130,7 @@ const submenuData = [
                 <li>Click <strong>Careers Video</strong> then click <strong>Select</strong></li>
                 <li>Choose a video from the _Content folder or click <strong>Create New Content</strong> to add a new video to the Media Library</li>
                 <li>Configure the video settings as needed</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1147,7 +1142,7 @@ const submenuData = [
             <ol>
                 <li>Click on the video</li>
                 <li>Click the <strong>Remove (X)</strong> button</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         `
     },
@@ -1162,7 +1157,7 @@ const submenuData = [
                 <li><strong>Limit</strong> refers to the maximum number of job postings to display - Enter a number between 1-10 (3 recommended) or leave blank for default of 10</li>
                 <li><strong>See All Careers Link</strong> refers to the URL for the "See All" button - Select a page from the dropdown</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> The job postings component is connected to the external job board and will automatically update with new postings. The filter option allows you to display only certain types of jobs based on keywords. Use "," for the AND operator and "|" for the OR operator</p>
         `
@@ -1182,7 +1177,7 @@ const submenuData = [
                 <li>Click <strong>Select</strong></li>
                 <li>Either Select Existing Content or Create New Content from the next dialogue</li>
                 <li>If creating new content, input a name and then click <strong>OK</strong></li> 
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1196,7 +1191,7 @@ const submenuData = [
                 <li>Click either the <strong>Add Image</strong>, <strong>Edit Image</strong> or <strong>Remove Image</strong> button</li>
                 <li>Add, edit or remove an image as you normally would</li>
                 <li>Click <strong>Select</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1208,7 +1203,7 @@ const submenuData = [
             <ol>
                 <li>Click on the placeholder text</li> 
                 <li>Add, edit or remove text as you normally would</li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> The last text field is a rich text field and can include various formatting options such as bold, italic, lists, and links.</p>
         `
@@ -1223,7 +1218,7 @@ const submenuData = [
                 <li>Click either the <strong>Edit Button</strong> or <strong>Remove Button</strong> button</li>
                 <li>Select a link type from the left menu, then select a page or enter a URL or email address</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> In the edit link dialogue, you have the option to input a style class for the button. Please input "button" if you would like your button to follow brand style guidelines for the site.</p>
         `
@@ -1238,7 +1233,7 @@ const submenuData = [
                 <li>This will bring up a dialogue where you can select a component to add</li>
                 <li>Choose from the available components, then click <strong>Select</strong></li>
                 <li>Configure the component fields in the dialog that appears</li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1253,7 +1248,7 @@ const submenuData = [
                 <li>Choose <strong>Enhanced Content Image Banner</strong> and click <strong>Select</strong></li>
                 <li>Choose your data source - either select an existing item or create a new one</li>
                 <li>Click <strong>Select</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1267,7 +1262,7 @@ const submenuData = [
                 <li>Click either the <strong>Add Image</strong>, <strong>Edit Image</strong> or <strong>Remove Image</strong> button</li>
                 <li>Add, edit or remove an image as you normally would</li>
                 <li>Click <strong>Select</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1279,7 +1274,7 @@ const submenuData = [
             <ol>
                 <li>Click on the placeholder text</li> 
                 <li>Add, edit or remove text as you normally would</li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> The last text field is a rich text field and can include various formatting options such as bold, italic, lists, and links.</p>
         `
@@ -1294,7 +1289,7 @@ const submenuData = [
                 <li>Click either the <strong>Edit Button</strong> or <strong>Remove Button</strong> button</li>
                 <li>Select a link type from the left menu, then select a page or enter a URL or email address</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> In the edit link dialogue, you have the option to input a style class for the button. Please input "button" if you would like your button to follow brand style guidelines for the site.</p>
         `
@@ -1310,7 +1305,7 @@ const submenuData = [
                 <li>Choose <strong>Icon List</strong> and click <strong>Select</strong></li>
                 <li>Choose your data source - either select an existing item or create a new one</li>
                 <li>Click <strong>Select</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> In order to add a new icon list component, you must first insert a 1, 2, 3 or 4 column frame. Then you can place the icon list component within that frame.</p>
         `
@@ -1329,7 +1324,7 @@ const submenuData = [
                 <li>Choose your List Options - Actionable (they have a hyperlink), Columns (the items will be ordered vertically), Separators (they will have a vertical bar between them) or Animated (they will have a decorative arrow that behind the text on hover)</li>
                 <li>If you would like everything to be vertically centered, you can check the <strong>Vertically Centered</strong> box under the <strong>Controls</strong> section</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> In order to add a new icon list component, you must first insert a 1, 2, 3 or 4 column frame. Then you can place the icon list component within that frame.</p>
         `
@@ -1344,7 +1339,7 @@ const submenuData = [
                 <li>Click on the <strong>Add item (+)</strong> button in the dialogue box that comes up</li>
                 <li>Make sure the <strong>Icon List Item</strong> is selected, name it and click <strong>OK</strong></li>
                 <li>Edit your headline, icon, and hyperlink as needed</li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1356,7 +1351,7 @@ const submenuData = [
             <ol>
                 <li>Click on the icon to bring up the dialogue box</li>
                 <li>Use the image edit buttons that appear to make your changes</li>
-                <li>Save and publish</li>   
+                <li>Save</li>   
             </ol>
             <p><strong>Note:</strong> You can also edit the hyperlink properties from this dialogue box. Use the hyperlink icons as you would normally.</p>
         `
@@ -1370,7 +1365,7 @@ const submenuData = [
                 <li>Click in the text box you want to edit and make your changes</li>
                 <li>While editing text, you will see 2 hyperlink buttons in the toolbar - Edit or Remove</li>
                 <li>Select the link type, make your changes to the URL and click <strong>OK</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
         `
     },
@@ -1385,7 +1380,7 @@ const submenuData = [
                 <li>Choose <strong>Accordion</strong> and click <strong>Select</strong></li>
                 <li>Choose your data source - either select an existing item or create a new one</li>
                 <li>Click <strong>Select</strong></li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> In order to add a new accordion component, you must first insert a 1, 2, 3 or 4 column frame. Then you can place the accordion component within that frame.</p>
         `
@@ -1398,7 +1393,7 @@ const submenuData = [
             <ol>
                 <li>Click on the placeholder text</li> 
                 <li>Add, edit or remove text as you normally would</li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> The expanded text field is a rich text field and can include various formatting options such as bold, italic, lists, and links.</p>
         `
@@ -1414,7 +1409,7 @@ const submenuData = [
                 <li>You can either right-click on the accordion component, click <strong>Insert</strong> and then <strong>Consolidated Content</strong>, or use the top command ribbon to add a new <strong>Consolidated Content</strong> item</li>
                 <li>Name the item and click <strong>OK</strong></li>
                 <li>Fill in the <strong>Heading Level 1</strong> and <strong>Content</strong> fields for the new accordion item</li>
-                <li>Save and publish</li>                          
+                <li>Save</li>                          
             </ol>
             <p><strong>Note:</strong> The only part of the Consolidated Content item that is used for an accordion item is the <strong>Heading Level 1</strong> and the <strong>Content</strong> fields. All other fields are ignored.</p>
         `
@@ -1476,7 +1471,7 @@ const infoPages = {
                 <li>Click the <strong>Move</strong> button to open the move dialog</li>
                 <li>Click <strong>Move here</strong> on the desired placeholder or position</li>
                 <li>Alternatively, use the drag handle (if available) to drag the component to a new position within the same placeholder</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         </div>
         </div><div class="task">
@@ -1492,7 +1487,7 @@ const infoPages = {
                 <li>Click on the component to reveal the component toolbar</li>
                 <li>Click on the red <strong>(X)</strong> icon</li>
                 <li>Confirm the removal when prompted</li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
             <p><strong>Note:</strong> Removing a component from a page does not delete its datasource item. The content item in the tree is unaffected.</p>
         </div>
@@ -1527,7 +1522,7 @@ const infoPages = {
                 <li>Click <strong>More</strong> then <strong>Edit Component Properties</strong></li>
                 <li>Update any available options (e.g., layout, style, visibility)</li>
                 <li>Click <strong>OK</strong></li>
-                <li>Save and publish</li>
+                <li>Save</li>
             </ol>
         </div>
         </div></div>

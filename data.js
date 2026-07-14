@@ -169,7 +169,7 @@ const data = [
                 <li>Open Experience Editor</li>
                 <li>Click directly on the text field you want to edit</li>
                 <li>Make your updates using the inline toolbar</li>
-                <li>Click <strong>Save</strong> then <strong>Publish</strong></li>
+                <li>Click <strong>Save</strong></li>
             </ol>
         `
     },
@@ -395,7 +395,6 @@ const data = [
                 <li>Click <strong>More</strong> then <strong>Edit Component Properties</strong></li>
                 <li>In the dialog, update the <strong>Data Source</strong> field to point to a different content item, or click <strong>Edit the related item</strong> to open the current datasource for editing</li>
                 <li>Save the datasource item changes</li>
-                <li>Publish the page</li>
             </ol>
         `
     },
@@ -409,45 +408,6 @@ const data = [
                 <li>Update any available options (e.g., layout, style, visibility)</li>
                 <li>Click <strong>OK</strong></li>
                 <li>Save</li>
-            </ol>
-        `
-    },
-    {
-        tab: "careers",
-        title: "Careers site editing overview",
-        body: `
-            <ol>
-                <li>Open the Careers page you need to edit in Experience Editor</li>
-                <li>Review the page layout and identify which component needs to be updated</li>
-                <li>Use the submenu under <strong>Careers Site Tasks</strong> to select component-specific instructions</li>
-                <li>Make all content, media, link, and accessibility updates</li>
-                <li>Save, preview, and publish the page when ready</li>
-            </ol>
-        `
-    },
-    {
-        tab: "careers",
-        title: "Careers accessibility checklist",
-        body: `
-            <ol>
-                <li>Confirm every image has meaningful alt text, or empty alt text if decorative</li>
-                <li>Make sure CTA labels are descriptive and do not rely only on text like "Click here"</li>
-                <li>Verify heading levels are logical and do not skip levels unnecessarily</li>
-                <li>Check that links open in the expected target window</li>
-                <li>Preview the page before publishing</li>
-            </ol>
-        `
-    },
-    {
-        tab: "careers",
-        title: "Careers page pre-publish review",
-        body: `
-            <ol>
-                <li>Confirm all visible content has been reviewed and approved</li>
-                <li>Check that all CTAs point to the correct internal or external destination</li>
-                <li>Confirm images are optimized and have completed accessibility fields</li>
-                <li>Preview the page in Experience Editor</li>
-                <li>Publish the page once the review is complete</li>
             </ol>
         `
     },

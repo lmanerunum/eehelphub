@@ -1,5 +1,3 @@
-UPDATING TO TEST COMMITS
-
 # Experience Editor Help Hub
 
 Experience Editor Help Hub is a lightweight, single-page help application for Sitecore content editors and managers. It provides searchable, categorized guidance for common Experience Editor, Content Editor, media, component, publishing, and packaging tasks.
